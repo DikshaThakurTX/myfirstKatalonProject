@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>currentMonth</name>
+   <name>fromDateDropDown</name>
    <tag></tag>
-   <elementGuidId>b5135a7e-92a2-46b0-ad6b-db166802e911</elementGuidId>
+   <elementGuidId>a0d3244f-0af9-4730-afce-9fc25d1f15bf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;oxd-calendar-selector-month-selected&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@placeholder=&quot;yyyy-dd-mm&quot;][1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

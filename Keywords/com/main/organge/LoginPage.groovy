@@ -40,66 +40,15 @@ public class LoginPage {
 		WebUI.click(findTestObject('Object Repository/OrangeLocator/LoginButton'))
 	}
 
-	@Keyword
-	public static leave() {
-
-		TestObject leave = findTestObject('Object Repository/Leave/Leave')
-
-		if(WebUI.verifyElementVisible(leave)){
-
-			WebUI.click(leave)
-			WebUI.verifyElementText(findTestObject('Object Repository/Leave/verifyLeaveList'), "Leave List")
-			fromToLeave()
-		}
-		else {
-			println(" not valid input")
-		}
-	}
 
 	@Keyword
-	public static fromToLeave() {
-		
-		def leave =findTestData('Data Files/leave')
-		String fromYear=leave.getValue("fromYear", 1)
-		String fromDate=leave.getValue("fromDate", 1)
-		String fromMonth=leave.getValue("fromMonth", 1)
-		String toYear=leave.getValue("toYear", 1)
-		String toDate=leave.getValue("toDate", 1)
-		String toMonth=leave.getValue("toMonth", 1)
-
-		TestObject fromDateBox = findTestObject('Object Repository/Leave/fromDatebox')
-
-		if(WebUI.verifyElementVisible(fromDateBox)){
-
-			WebUI.click(fromDateBox)
-			while (true) {
-				WebUI.delay(2)
-				String currentMonth = WebUI.getText(findTestObject('Object Repository/Leave/currentMonth')) 
-				String currentYear = WebUI.getText(findTestObject('Object Repository/Leave/fromyear'))  
-				WebUI.delay(1)
-				if (currentMonth.equalsIgnoreCase(fromMonth) && currentYear.equals(fromYear)) {
-					findTestObject('Object Repository/Leave/fromdate',[('fromDate'):fromDate  ])
-					break
-				}
-				else {
-					WebUI.click(findTestObject('Object Repository/Leave/monthDropdown'))
-					WebUI.click(findTestObject('Object Repository/Leave/selectFromMonthDropDown',[('fromMonth'): fromMonth]))
-					WebUI.delay(1)
-					WebUI.click(findTestObject('Object Repository/Leave/fromdate',[('fromDate'): fromDate]))
-				}
-		
-					
-
-
-			
-			
-			}
-			
-		}
-		}
-		}
-		
+	public static logout() {
 	
+		
+	}
+}
+
+
 
 
 

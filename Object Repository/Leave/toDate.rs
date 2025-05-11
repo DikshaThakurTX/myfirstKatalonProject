@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>monthDropdown</name>
+   <name>toDate</name>
    <tag></tag>
-   <elementGuidId>e6e3920d-2210-42f0-b413-b1dff620e55f</elementGuidId>
+   <elementGuidId>d7b8ced4-dd97-40d8-966e-1654f43e5baa</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//ul[@class=&quot;oxd-calendar-selector&quot;]//following::div[@class=&quot;oxd-calendar-selector-month-selected&quot;]&#xd;
-</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[text()=&quot;${todate}&quot;]/following::div[@class=&quot;oxd-date-input&quot;][1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

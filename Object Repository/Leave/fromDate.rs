@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>fromForwardArrow</name>
+   <name>fromDate</name>
    <tag></tag>
-   <elementGuidId>97db7f10-0423-469b-924e-eb37888677c2</elementGuidId>
+   <elementGuidId>5f29328a-e9b6-41f4-879a-5dbd74985c31</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@class=&quot;oxd-icon-button&quot;]/child::i[@class=&quot;oxd-icon bi-chevron-right&quot;]</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@placeholder=&quot;{$FromDate}&quot;][1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
