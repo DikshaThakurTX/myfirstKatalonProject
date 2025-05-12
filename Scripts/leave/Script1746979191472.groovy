@@ -26,10 +26,6 @@ public void fromToLeave() {
 	def leave =findTestData('Data Files/leave')
 	String fromDate=leave.getValue("fromDate", 1)
 	String toDate=leave.getValue("toDate", 1)
-	String leaveStatus=leave.getValue("leaveStatus", 1)
-	String leaveType=leave.getValue("leaveType", 1)
-	String employeeName=leave.getValue("employeeName", 1)
-	String subUnit=leave.getValue("subUnit", 1)
 	
 	WebUI.click(findTestObject('Object Repository/Leave/Leave'))
 	WebUI.click(findTestObject('Object Repository/Leave/fromDateDropDown'))
