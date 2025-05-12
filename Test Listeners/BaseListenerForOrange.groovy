@@ -38,8 +38,12 @@ class BaseListenerForOrange {
 	 * Executes after every test case ends.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	@AfterTestCase
+@AfterTestCase
 	public void afterTestCase(TestCaseContext testCaseContext) {
+		
+		WebUI.click(findTestObject('Object Repository/OrangeLocator/Moath'))
+		WebUI.click(findTestObject('Object Repository/OrangeLocator/Logout'))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeLocator/LogoutVerify'), 5)
 		
 		WebUI.delay(3)
 		WebUI.closeBrowser()

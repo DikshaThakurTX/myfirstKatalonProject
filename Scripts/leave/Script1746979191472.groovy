@@ -27,15 +27,15 @@ public void fromToLeave() {
 	String fromDate=leave.getValue("fromDate", 1)
 	String toDate=leave.getValue("toDate", 1)
 	
-	WebUI.click(findTestObject('Object Repository/Leave/Leave'))
-	WebUI.click(findTestObject('Object Repository/Leave/fromDateDropDown'))
-	TestObject dateField = findTestObject('Object Repository/Leave/fromDateDropDown')
-	WebUI.executeJavaScript("arguments[0].removeAttribute('readonly')", Arrays.asList(WebUI.findWebElement(dateField, 10)))
-	WebUI.setText(dateField, '')
-
-//	WebUI.setText(findTestObject('Object Repository/Leave/fromDate'),[('FromDate'): fromDate])
-//	WebUI.clearText(findTestObject('Object Repository/Leave/fromDateDropDown'))
-
-//	WebUI.setText(findTestObject('Object Repository/Leave/fromDateDropDown',[('toDate'): toDate]))
-//	WebUI.delay(3)
+	
+		WebUI.click(findTestObject('Object Repository/Leave/Leave'))
+		WebUI.click(findTestObject('Object Repository/Leave/fromDateDropDown'))	
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDateDropDown'), Keys.chord(Keys.CONTROL, 'a'))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDateDropDown'),  Keys.chord(Keys.DELETE))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDateDropDown'),fromDate)
+		WebUI.click(findTestObject('Object Repository/Leave/toDateDropDown'))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDateDropDown'), Keys.chord(Keys.CONTROL,'a'))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDateDropDown'),  Keys.chord(Keys.DELETE))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDateDropDown'),toDate)
+		WebUI.delay(2)
 }
