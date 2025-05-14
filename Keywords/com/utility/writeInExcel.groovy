@@ -18,8 +18,8 @@ public class writeInExcel {
 		if(!file.exists())  // file is not exit create a new file
 		{
 			//creating a new file
-			fo= new FileOutputStream(filePath)
-			workbook = new XSSFWorkbook(fo)
+			workbook = new XSSFWorkbook()
+			fo = new FileOutputStream(file)
 			workbook.write(fo)
 		}
 		fi= new FileInputStream(file)
