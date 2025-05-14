@@ -19,13 +19,7 @@ import dev.failsafe.internal.util.Assert
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.UrlOrange)
-
-
-WebUI.maximizeWindow()
-
-WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/Username'), GlobalVariable.Username)
-
+WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/userName'), GlobalVariable.Username)
 WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('Object Repository/OrangeLocator/LoginButton'))
@@ -38,16 +32,8 @@ WebUI.click(findTestObject('Object Repository/OrangeLocator/PIM'))
 
 WebUI.click(findTestObject('Object Repository/Leave/Leave'))
 
-WebUI.click(findTestObject('Object Repository/OrangeLocator/Moath'))
+//WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeLocator/LogoutVerify'), 5)
 
-WebUI.click(findTestObject('Object Repository/OrangeLocator/Logout'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeLocator/LogoutVerify'), 5)
-
-
-//String tx =WebUI.getText(findTestObject)
-//
-//assert tx == ex 
 
 
 

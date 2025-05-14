@@ -25,4 +25,10 @@
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('UrlOrange') : 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login', ('Username') : 'Admin', ('Password') : 'admin123']</initValue>
+      <name>mapCredentials</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

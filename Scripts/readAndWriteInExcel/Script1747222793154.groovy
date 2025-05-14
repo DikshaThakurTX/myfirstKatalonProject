@@ -17,7 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//reading from excel
 
-String urlOrange = GlobalVariable.UrlOrange
+String fileName = 'C:\\Users\\Diksha Thakur\\Katalon Studio\\katalondemo\\myfirstKatalonProject\\Data Files\\excel.xlsx'
+String sheetName = 'Sheet1'
 
-println urlOrange
+WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/Username'),
+	CustomKeywords.'com.utility.readFromExcel.getCellDate'(fileName, sheetName, 1, 1))
+
+WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/Password'),
+	CustomKeywords.'com.utility.readFromExcel.getCellDate'(fileName, sheetName, 1, 2))
+
+WebUI.click(findTestObject('Object Repository/OrangeLocator/LoginButton'))
+
+
+
+//write in excel
+
+//String path ="C:\\Users\\Diksha Thakur\\Katalon Studio\\katalondemo\\myfirstKatalonProject\\Data Files\\excelWrite.xlsx"
+//String sheetName = 'Sheet1'
+//
+//CustomKeywords.'com.utility.writeInExcel.setCellData'(path, sheetName, 0, 0,"username")
+//CustomKeywords.'com.utility.writeInExcel.setCellData'(path, sheetName, 0, 1,"password")
+//CustomKeywords.'com.utility.writeInExcel.setCellData'(path, sheetName, 0, 2,"id")

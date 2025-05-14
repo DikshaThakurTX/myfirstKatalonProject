@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.junit.After
+import org.w3c.dom.DOMImplementationSource
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
@@ -22,7 +25,7 @@ import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
-class BaseListenerForOrange {
+class BaseListenerForOrange   {
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
@@ -41,11 +44,12 @@ class BaseListenerForOrange {
 @AfterTestCase
 	public void afterTestCase(TestCaseContext testCaseContext) {
 		
-		WebUI.click(findTestObject('Object Repository/OrangeLocator/Moath'))
+		WebUI.click(findTestObject('Object Repository/OrangeLocator/userDropDown'))
 		WebUI.click(findTestObject('Object Repository/OrangeLocator/Logout'))
 		WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeLocator/LogoutVerify'), 5)
 		
 		WebUI.delay(3)
 		WebUI.closeBrowser()
+		
 }
 }

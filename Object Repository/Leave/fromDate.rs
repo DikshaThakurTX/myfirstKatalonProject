@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Moath</name>
+   <name>fromDate</name>
    <tag></tag>
-   <elementGuidId>1d0c7015-b528-4efc-8e55-f4de2706a476</elementGuidId>
+   <elementGuidId>a0d3244f-0af9-4730-afce-9fc25d1f15bf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class=&quot;oxd-userdropdown-tab&quot;]</value>
+         <value>(//div[@class=&quot;oxd-date-input&quot;]/child::input[@placeholder=&quot;yyyy-dd-mm&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

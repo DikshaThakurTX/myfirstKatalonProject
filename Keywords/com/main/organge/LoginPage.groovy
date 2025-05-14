@@ -41,11 +41,9 @@ public class LoginPage {
 	}
 
 
-	@Keyword
-	public static logout() {
-	
-		
-	}
+//	@Keyword
+//	public static logout() {
+//	}
 }
 
 

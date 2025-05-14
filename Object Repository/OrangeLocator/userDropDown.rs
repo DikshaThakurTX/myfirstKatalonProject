@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>toDate</name>
+   <name>userDropDown</name>
    <tag></tag>
-   <elementGuidId>b1d6b632-9757-4348-b615-9aad5db9bcb1</elementGuidId>
+   <elementGuidId>1d0c7015-b528-4efc-8e55-f4de2706a476</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//span[@class=&quot;oxd-userdropdown-tab&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value> (//div[@class=&quot;oxd-date-input&quot;]/child::input[@placeholder=&quot;yyyy-dd-mm&quot;])[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

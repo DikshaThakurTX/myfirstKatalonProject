@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>toDate</name>
+   <name>birthDate</name>
    <tag></tag>
-   <elementGuidId>b1d6b632-9757-4348-b615-9aad5db9bcb1</elementGuidId>
+   <elementGuidId>8f5d7fb3-108f-4442-9713-4e415a8cb5eb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value> (//div[@class=&quot;oxd-date-input&quot;]/child::input[@placeholder=&quot;yyyy-dd-mm&quot;])[2]</value>
+         <value>//select[@name=&quot;birthday_day&quot;]//following-sibling::option[text()=&quot;3&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>GlobalVariable</name>
+   <name>ListAndMap</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>94a79593-f9b9-43f0-9064-13a8d974be94</testCaseGuid>
+   <testCaseGuid>5f7fb492-9ebf-4d50-940e-a82d7d0125d4</testCaseGuid>
 </TestCaseEntity>

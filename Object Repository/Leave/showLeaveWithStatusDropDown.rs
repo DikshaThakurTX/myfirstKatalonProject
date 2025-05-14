@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>toDateDropDown</name>
+   <name>showLeaveWithStatusDropDown</name>
    <tag></tag>
-   <elementGuidId>b1d6b632-9757-4348-b615-9aad5db9bcb1</elementGuidId>
+   <elementGuidId>930d0c1b-3033-49ab-9dd7-933355d3725a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value> (//div[@class=&quot;oxd-date-input&quot;]/child::input[@placeholder=&quot;yyyy-dd-mm&quot;])[2]</value>
+         <value>//label[text()=&quot;Show Leave with Status&quot;]/following::div[text()=&quot;-- Select --&quot;][1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

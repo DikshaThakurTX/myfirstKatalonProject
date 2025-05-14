@@ -18,24 +18,23 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-fromToLeave()
+fromToDate()
 
 
 
-public void fromToLeave() {
+public void fromToDate() {
 	def leave =findTestData('Data Files/leave')
 	String fromDate=leave.getValue("fromDate", 1)
 	String toDate=leave.getValue("toDate", 1)
-	
-	
+
 		WebUI.click(findTestObject('Object Repository/Leave/Leave'))
-		WebUI.click(findTestObject('Object Repository/Leave/fromDateDropDown'))	
-		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDateDropDown'), Keys.chord(Keys.CONTROL, 'a'))
-		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDateDropDown'),  Keys.chord(Keys.DELETE))
-		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDateDropDown'),fromDate)
-		WebUI.click(findTestObject('Object Repository/Leave/toDateDropDown'))
-		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDateDropDown'), Keys.chord(Keys.CONTROL,'a'))
-		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDateDropDown'),  Keys.chord(Keys.DELETE))
-		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDateDropDown'),toDate)
+		WebUI.click(findTestObject('Object Repository/Leave/fromDate'))	
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDate'), Keys.chord(Keys.CONTROL, 'a'))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDate'),  Keys.chord(Keys.DELETE))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/fromDate'),fromDate)
+		WebUI.click(findTestObject('Object Repository/Leave/toDate'))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDate'), Keys.chord(Keys.CONTROL,'a'))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDate'),  Keys.chord(Keys.DELETE))
+		WebUI.sendKeys(findTestObject('Object Repository/Leave/toDate'),toDate)
 		WebUI.delay(2)
 }
