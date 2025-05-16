@@ -39,7 +39,6 @@ public class LoginPage {
 		}
 		WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/LoginButton'))
 	}
-
 }
 
 
