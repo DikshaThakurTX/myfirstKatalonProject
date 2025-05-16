@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>readAndWriteInExcel</name>
+   <name>praticeForMapping</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>ab4ce782-8357-4ce4-8589-67e29d118dab</testCaseGuid>
+   <testCaseGuid>5f7fb492-9ebf-4d50-940e-a82d7d0125d4</testCaseGuid>
 </TestCaseEntity>

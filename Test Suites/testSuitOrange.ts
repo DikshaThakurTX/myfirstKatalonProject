@@ -15,7 +15,7 @@
       <guid>ae031bb2-df2d-4980-a3b2-0081778a333f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC1</testCaseId>
+      <testCaseId>Test Cases/callingOrangeHrmsLoginAndLeaveModule</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>67d206d2-9beb-4b45-8286-94ae7f1d0761</id>

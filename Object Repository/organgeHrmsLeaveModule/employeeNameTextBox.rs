@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>showLeaveWithStatusDropDown</name>
+   <name>employeeNameTextBox</name>
    <tag></tag>
-   <elementGuidId>930d0c1b-3033-49ab-9dd7-933355d3725a</elementGuidId>
+   <elementGuidId>48fddc2a-f829-4a00-95be-8999a730f2fc</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;oxd-autocomplete-wrapper&quot;]//following::input[@placeholder=&quot;Type for hints...&quot;]&#xd;
+&#xd;
+</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//label[text()=&quot;Show Leave with Status&quot;]/following::div[text()=&quot;-- Select --&quot;][1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

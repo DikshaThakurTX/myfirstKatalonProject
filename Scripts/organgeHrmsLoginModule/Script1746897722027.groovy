@@ -21,4 +21,4 @@ import org.openqa.selenium.Keys as Keys
 
 
 
-CustomKeywords.'com.main.organge.LoginPage.login'(GlobalVariable.Username, GlobalVariable.Password)
+CustomKeywords.'com.main.organge.LoginPage.login'(GlobalVariable.Username, GlobalVariable.encryptedPassword)

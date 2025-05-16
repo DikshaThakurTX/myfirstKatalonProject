@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>ListAndMap</name>
+   <name>organgeHrmsLoginModule</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>5f7fb492-9ebf-4d50-940e-a82d7d0125d4</testCaseGuid>
+   <testCaseGuid>b7819aed-b7fe-4c35-ac3e-9508b132f816</testCaseGuid>
 </TestCaseEntity>

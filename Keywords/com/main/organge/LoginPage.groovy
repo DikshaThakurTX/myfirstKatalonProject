@@ -28,22 +28,18 @@ public class LoginPage {
 	public static login(String userName, String password) {
 
 
-		TestObject userPlaceHolder = findTestObject('Object Repository/OrangeLocator/Username')
+		TestObject userPlaceHolder = findTestObject('Object Repository/organgreHrmLoginModule/Username')
 		if(WebUI.verifyElementVisible(userPlaceHolder)) {
 
 			WebUI.setText(userPlaceHolder, userName)
-			WebUI.setText(findTestObject('Object Repository/OrangeLocator/Password'), password)
+			WebUI.setEncryptedText(findTestObject('Object Repository/organgreHrmLoginModule/Password'), 'hUKwJTbofgPU9eVlw/CnDQ==')
 		}
 		else {
 			println(" not valid input")
 		}
-		WebUI.click(findTestObject('Object Repository/OrangeLocator/LoginButton'))
+		WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/LoginButton'))
 	}
 
-
-//	@Keyword
-//	public static logout() {
-//	}
 }
 
 

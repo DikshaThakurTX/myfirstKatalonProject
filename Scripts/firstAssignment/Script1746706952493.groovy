@@ -19,20 +19,20 @@ import dev.failsafe.internal.util.Assert
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/userName'), GlobalVariable.Username)
-WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/Password'), GlobalVariable.Password)
+WebUI.sendKeys(findTestObject('Object Repository/organgreHrmLoginModule/userName'), GlobalVariable.Username)
+WebUI.sendKeys(findTestObject('Object Repository/organgreHrmLoginModule/Password'), GlobalVariable.encryptedPassword)
 
-WebUI.click(findTestObject('Object Repository/OrangeLocator/LoginButton'))
+WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/LoginButton'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeLocator/Dashboard'),5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/organgreHrmLoginModule/Dashboard'),5)
 
-WebUI.click(findTestObject('Object Repository/OrangeLocator/Admin'))
+WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/Admin'))
 
-WebUI.click(findTestObject('Object Repository/OrangeLocator/PIM'))
+WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/PIM'))
 
-WebUI.click(findTestObject('Object Repository/Leave/Leave'))
+WebUI.click(findTestObject('Object Repository/organgeHrmsLeaveModule/leave'))
 
-//WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeLocator/LogoutVerify'), 5)
+//WebUI.verifyElementPresent(findTestObject('Object Repository/organgreHrmLoginModule/LogoutVerify'), 5)
 
 
 

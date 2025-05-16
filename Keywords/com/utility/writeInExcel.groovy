@@ -13,52 +13,20 @@ public class writeInExcel {
 
 	@Keyword
 	def setCellData(String filePath ,String sheetName, int rowNum,int cellNum,String data){
-
-		file= new File(filePath)
-		if(!file.exists())  // file is not exit create a new file
-		{
-			//creating a new file
-			workbook = new XSSFWorkbook()
-			fo = new FileOutputStream(file)
-			workbook.write(fo)
-		}
-		fi= new FileInputStream(file)
-		workbook = new XSSFWorkbook(fi) //getting workbook
-
-		if(workbook.getSheetIndex(sheetName)==-1)// if sheet not exits create new new sheet
-			workbook.createSheet(sheetName)// create new sheet
-		sheet =workbook.getSheet(sheetName) //get sheet
-
-
-		if(sheet.getRow(rowNum)==null)// if row not exits for particular sheet
-			sheet.createRow(rowNum) //create new row
-		row=sheet.getRow(rowNum)// get row
-
-		cell= row.createCell(cellNum) //for the particular row we need to create a cell
+		FileInputStream fi = new FileInputStream(filePath)
+		XSSFWorkbook workbook = new XSSFWorkbook(fi)
+		sheet = workbook.getSheet(sheetName)
+		row = sheet.createRow(rowNum)
+		cell = row.createCell(cellNum)
 		cell.setCellValue(data)
-
-		fo = new FileOutputStream(file) //to write all data in workbook opening file
+		fi.close()
+		FileOutputStream fo = new FileOutputStream(filePath)
 		workbook.write(fo)
 		workbook.close()
 		fo.close()
-		fi.close()
 	}
 }
 
-
-//
-//		def filePath = "C:\\Users\\Diksha Thakur\\Katalon Studio\\katalondemo\\myfirstKatalonProject\\Data Files\\excelWrite.xlsx"
-//
-//		// Create and write
-//		workbook = new XSSFWorkbook()
-//		workbook.createSheet(sheetName).createRow(rowNum).createCell(cellNum).setCellValue(data)
-//
-//		FileOutputStream fos = new FileOutputStream(filePath)
-//		workbook.write(fos)create
-//		fos.close()
-//		workbook.close()
-//	}
-//}
 
 
 

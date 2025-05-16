@@ -27,23 +27,18 @@ String username = orangeLogin.getValue('Username', 1)
 
 String password = orangeLogin.getValue('Password', 1)
 
-WebUI.openBrowser(url)
 
-WebUI.maximizeWindow()
+WebUI.sendKeys(findTestObject('Object Repository/organgreHrmLoginModule/Username'), username)
 
-WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/Username'), username)
+WebUI.sendKeys(findTestObject('Object Repository/organgreHrmLoginModule/Password'), password)
 
-WebUI.sendKeys(findTestObject('Object Repository/OrangeLocator/Password'), password)
+WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/LoginButton'))
 
-WebUI.click(findTestObject('Object Repository/OrangeLocator/LoginButton'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/organgreHrmLoginModule/Dashboard'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeLocator/Dashboard'), 5)
-
-WebUI.click(findTestObject('Object Repository/OrangeLocator/Admin'))
+WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/Admin'))
 
 WebUI.click(findTestObject('Object Repository/AdminAdd/AddBtn'))
-
-
 
 def admin = findTestData('Data Files/Admin')
 
@@ -74,9 +69,7 @@ WebUI.setText(findTestObject('Object Repository/AdminAdd/adminPassword'),adminPa
 
 WebUI.setText(findTestObject('Object Repository/AdminAdd/adminConfirmPassword'),confirm)
 
-WebUI.delay(3)
 
-WebUI.closeBrowser()
 
 
 

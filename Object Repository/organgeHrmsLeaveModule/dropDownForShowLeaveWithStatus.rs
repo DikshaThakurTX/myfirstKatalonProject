@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>fromDate</name>
+   <name>dropDownForShowLeaveWithStatus</name>
    <tag></tag>
-   <elementGuidId>a0d3244f-0af9-4730-afce-9fc25d1f15bf</elementGuidId>
+   <elementGuidId>930d0c1b-3033-49ab-9dd7-933355d3725a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//label[text()=&quot;Show Leave with Status&quot;]/following::div[text()=&quot;-- Select --&quot;][1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class=&quot;oxd-date-input&quot;]/child::input[@placeholder=&quot;yyyy-dd-mm&quot;])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

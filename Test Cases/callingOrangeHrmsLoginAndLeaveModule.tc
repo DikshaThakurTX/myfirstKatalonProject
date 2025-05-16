@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>leave</name>
+   <name>callingOrangeHrmsLoginAndLeaveModule</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>c9a1a6b7-40d5-4e82-8274-df7028a85441</testCaseGuid>
+   <testCaseGuid>ce2bb546-de95-465c-8c5c-22146d2cc77f</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
-      <id>3d81cb1b-1dbe-4b1e-905c-c6280aa4ceea</id>
+      <id>529acc96-4331-4853-863e-8c2ac9a0a274</id>
       <iterationEntity>
          <iterationType>ALL</iterationType>
          <value></value>

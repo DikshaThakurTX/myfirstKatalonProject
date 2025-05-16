@@ -44,9 +44,9 @@ class BaseListenerForOrange   {
 @AfterTestCase
 	public void afterTestCase(TestCaseContext testCaseContext) {
 		
-		WebUI.click(findTestObject('Object Repository/OrangeLocator/userDropDown'))
-		WebUI.click(findTestObject('Object Repository/OrangeLocator/Logout'))
-		WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeLocator/LogoutVerify'), 5)
+		WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/userDropDown'))
+		WebUI.click(findTestObject('Object Repository/organgreHrmLoginModule/Logout'))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/organgreHrmLoginModule/LogoutVerify'), 5)
 		
 		WebUI.delay(3)
 		WebUI.closeBrowser()

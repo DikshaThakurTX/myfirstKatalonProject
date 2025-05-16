@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>optionsForshowLeaveWithStaus</name>
+   <name>dropDownLeaveType</name>
    <tag></tag>
-   <elementGuidId>94279428-1aae-413a-97f5-57a713256afb</elementGuidId>
+   <elementGuidId>50f4aa21-45c1-4c2a-9435-84bbf6f2e858</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[text()=&quot;Show Leave with Status&quot;]/following::div[text()=&quot;-- Select --&quot;][2]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@role=&quot;listbox&quot;]/child::div[@class=&quot;oxd-select-option&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

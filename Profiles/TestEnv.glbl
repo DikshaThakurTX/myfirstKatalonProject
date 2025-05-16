@@ -20,8 +20,8 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'admin123'</initValue>
-      <name>Password</name>
+      <initValue>'hUKwJTbofgPU9eVlw/CnDQ=='</initValue>
+      <name>encryptedPassword</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
@@ -30,5 +30,12 @@
       <initValue>[('UrlOrange') : 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login', ('Username') : 'Admin', ('Password') : 'admin123']</initValue>
       <name>mapCredentials</name>
       <protected>false</protected>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'admin123'</initValue>
+      <name>Password</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
