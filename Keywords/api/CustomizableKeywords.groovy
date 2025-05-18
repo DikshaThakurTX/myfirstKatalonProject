@@ -1,13 +1,14 @@
-package customizableKeywords
+package api
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.logging.KeywordLogger
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.TestObjectProperty
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.logging.KeywordLogger
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 
@@ -23,6 +24,7 @@ class CustomizableKeywords {
 			Map<String, Object> pathParams = [:],
 
 			Map<String, Object> queryParams = [:],
+
 
 			Object requestBody = null,
 

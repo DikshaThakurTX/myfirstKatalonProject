@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>getRequest</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>22a08872-5741-432a-82f2-88ddbe0b3727</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0aa415d5-8eff-4a22-8724-dd54d5ba49e1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b969d811-972c-4968-9c80-5d21d7122ef6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>509b2559-d09f-410d-884e-1c9b8c9b8b9c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bddac256-d3dd-40f3-be92-fee5b78f15b4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Diksha Thakur'</defaultValue>
+      <description></description>
+      <id>0aa415d5-8eff-4a22-8724-dd54d5ba49e1</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test Engineer'</defaultValue>
+      <description></description>
+      <id>b969d811-972c-4968-9c80-5d21d7122ef6</id>
+      <masked>false</masked>
+      <name>job</name>
+   </variable>
+   <variable>
+      <defaultValue>'morpheus'</defaultValue>
+      <description></description>
+      <id>509b2559-d09f-410d-884e-1c9b8c9b8b9c</id>
+      <masked>false</masked>
+      <name>namePut</name>
+   </variable>
+   <variable>
+      <defaultValue>'zion resident'</defaultValue>
+      <description></description>
+      <id>bddac256-d3dd-40f3-be92-fee5b78f15b4</id>
+      <masked>false</masked>
+      <name>jobPut</name>
+   </variable>
+</TestCaseEntity>
