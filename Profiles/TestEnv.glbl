@@ -40,7 +40,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://reqres.in/'</initValue>
+      <initValue>'https://reqres.in'</initValue>
       <name>BaseUrl</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
